@@ -1,7 +1,12 @@
 import React from 'react'
-
-export const shop = () => {
+import Hero from '../components/hero/hero'
+const shop = () => {
   return (
-    <div>shop</div>
+    <div>
+       <Hero/> {/* ✅ This is what you're missing */}
+      {/* ...other components like product listings etc. */}
+    </div>
   )
 }
+
+export default shop;

@@ -1,23 +1,27 @@
 
 import './App.css';
 import Navbar from './components/navbar/navbar';
-import {BrowerRouter,Route,Routes} from 'react-router-dom';
+import {BrowserRouter,Route,Routes} from 'react-router-dom';
+import Shop from './pages/shop';
+import Shopcategory from './pages/shopcategory';
+import Product from './pages/product';
+import Loginsignup from './pages/loginsignup';
 function App() {
   return (
     <div>
-      <BrowerRouter>
+      <BrowserRouter>
       <Navbar/>
       <Routes>
-        <Route path='/' element = {<shop/>}/>
-        <Route path='/mens' element = {<shopcategory category='mens'/>}/>
-        <Route path='/womens' element = {<shopcategory category='womens'/>}/>
-        <Route path='/kids' element = {<shopcategory category='kids'/>}/>
-        <Route path='/product' element = {<product/>}>
-        <Route path=':productid' element ={<product/>}/>
+        <Route path='/' element = {<Shop/>}/>
+        <Route path='/mens' element = {<Shopcategory category='mens'/>}/>
+        <Route path='/womens' element = {<Shopcategory category='womens'/>}/>
+        <Route path='/kids' element = {<Shopcategory category='kids'/>}/>
+        <Route path='/product' element = {<Product/>}>
+        <Route path=':productid' element ={<Product/>}/>
         </Route>
-        <Route path='/login' element ={<loginsignup/>}/>
+        <Route path='/login' element ={<Loginsignup/>}/>
       </Routes>
-      </BrowerRouter>
+      </BrowserRouter>
     </div>
   );
 }
