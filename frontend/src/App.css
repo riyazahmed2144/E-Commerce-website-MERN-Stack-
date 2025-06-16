@@ -1,7 +1,17 @@
 .App {
   text-align: center;
 }
-
+.old_price {
+  text-decoration: line-through;
+  filter: blur(0.3px);
+  opacity: 0.6;
+  font-size: 0.9em;
+  color: #888;
+}
+.new_price {
+  font-weight: 700;
+  color: #222;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

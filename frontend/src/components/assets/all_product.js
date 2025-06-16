@@ -29,7 +29,7 @@ import p28_img from "./_product.img28.webp";
 import p29_img from "./_product.img29.webp";
 import p30_img from "./_product.img30.webp";
 
-let all_product = [
+let All_product = [
     {
         id: 1,
         name: 'Mens Casual Printed T-Shirt',
@@ -271,3 +271,5 @@ let all_product = [
         old_price: 820.00,
     },
 ];
+
+export default All_product;

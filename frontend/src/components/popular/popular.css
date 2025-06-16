@@ -1,0 +1,33 @@
+.popular{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.popular h1{
+    color: #171717 ;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+.popular hr{
+    height: 4px;
+    width: 200px;
+    background-color: #252525a8;
+    border-radius: 10px;
+}
+.popular-items{
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+}
+.product-image{
+    height: 280px;
+    width: 220px;
+    transition: transform 0.3s ease;
+    margin-bottom: 15px;
+}
+.product-image:hover{
+    transform: scale(1.1);
+}
