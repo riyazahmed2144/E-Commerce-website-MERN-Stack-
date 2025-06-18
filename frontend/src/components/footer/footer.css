@@ -1,0 +1,77 @@
+.footer{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    gap: 30px;
+}
+.footer-logo p{
+    color: #383838;
+    font-size: 38px;
+    font-weight: 700;
+}
+.footer-links{
+    gap: 50px;
+    list-style: none;
+    font-size: 18px;
+    display: flex;
+    color: #252525;
+}
+.footer-links li{
+    cursor: pointer;
+}
+.insta{
+    padding: 10px;
+    padding-bottom: 6px;
+    background: #fbfbfb;
+    border: 1px solid #ebebeb;
+    cursor: pointer;
+}
+.wa{
+    padding: 10px;
+    padding-bottom: 6px;
+    background: #fbfbfb;
+    border: 1px solid #ebebeb;
+    cursor: pointer;
+}
+.pin{
+    padding: 10px;
+    padding-bottom: 6px;
+    background: #fbfbfb;
+    border: 1px solid #ebebeb;
+    cursor: pointer;
+}
+.insta img{
+    width: 38px;
+    height: 38px;
+}
+.wa img{
+    width: 38px;
+    height: 38px;
+}
+.pin img{
+    width: 38px;
+    height: 38px;
+}
+.footer-social-icon{
+    display: flex;
+    gap: 20px;
+}
+.footer-copyright{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+    font-size: 18px;
+}
+.footer-copyright hr{
+    height: 3px;
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    background: #c7c7c7;
+}
