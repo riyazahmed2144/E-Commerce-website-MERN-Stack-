@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.css';
+import cart from '../assets/cart.png'
 
 const Navbar = () => {
   const [menu, setMenu] = useState("Home");
-
-  const handleMenuClick = (item) => {
-    setMenu(item);
-  };
 
   return (
     <div className='navbar'>
@@ -29,7 +26,9 @@ const Navbar = () => {
        </li>
       </ul>
       <div className="login">
-        <Link to = '/login'><button>Login</button></Link>
+        <Link to = '/login'><button className='button-btn'>Login</button></Link>
+        <Link to = '/cart'><img src={cart} alt="" /></Link>
+        <div className="nav-count">0</div>
       </div>
     </div>
   );

@@ -30,7 +30,7 @@ const Displayproduct = ({product}) => {
                 <div className="old-price">₹{product.old_price}</div>
                 <div className="new-price">₹{product.new_price}</div>
             </div>
-            <div className="description">Stay comfortable and stylish with our classic cotton T-shirt. Made from soft, breathable fabric, it’s perfect for everyday wear.
+            <div className="description-des">Stay comfortable and stylish with our classic cotton T-shirt. Made from soft, breathable fabric, it’s perfect for everyday wear.
             </div>
             <div className="size">
                 <h1>Select Size</h1>
