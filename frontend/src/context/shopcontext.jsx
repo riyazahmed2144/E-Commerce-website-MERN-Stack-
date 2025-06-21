@@ -15,11 +15,32 @@ const Shopcontextprovider = (props) => {
   const addtocart = (itemid) =>{
     setcartitems((prev)=>({...prev,[itemid]:prev[itemid]+1}))
   }
+  const gettotal = () => {
+  let totalamount = 0;
+  for(const item in cartitems){
+    if(cartitems[item] > 0){
+      let iteminfo = All_product.find((product)=>product.id === Number(item));
+      if (iteminfo) {
+        totalamount += iteminfo.new_price * cartitems[item];
+      }
+    }
+  }
+  return totalamount;
+}
+
+const gettotalcart = () => {
+  let totalcart=0;
+  for(const item in cartitems){
+    totalcart += cartitems[item]
+  }
+  return totalcart;
+}
+
   console.log(cartitems);
   const removefromcart = (itemid) =>{
     setcartitems((prev)=>({...prev,[itemid]:prev[itemid]-1}))
   }
-  const contexvalue = {All_product,cartitems,addtocart,removefromcart};
+  const contexvalue = {gettotalcart,gettotal,All_product,cartitems,addtocart,removefromcart};
   return(
     <Shopcontext.Provider value={contexvalue}>
         {props.children}
